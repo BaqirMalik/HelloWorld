@@ -31,6 +31,4 @@ jobs:
     - name: Installing surge
       run: npm install -g surge
     - name: Deploying using surge
-      run: surge ./ http://wonderful-cloud.surge.sh/ --token $ {{secrets.SURGE_TOKEN}}
-        echo Add other actions to build,
-        echo test, and deploy your project.
+      run: surge ./ wonderful-cloud.surge.sh/ --token $ {{secrets.SURGE_TOKEN}}
